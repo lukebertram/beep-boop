@@ -2,11 +2,11 @@ body {
   background-color: #000;
 }
 .row {
-  height: 100vh;
+  min-height: 100vh;
 }
  form{
    position:relative;
-   top: 45%;
+   top: 45vh;
  }
 
 .hal-column{

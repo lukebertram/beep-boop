@@ -33,7 +33,7 @@ This website will accept a positive integer from a user and return the set of in
 
 * Replaces all integers divisible by 3 in the return string with "I'm sorry" message.
  * Input: "10"
- * Output: "Boop! 2 I'm sorry 4 5 I'm sorry 7 8 I'm sorry Beep!"
+ * Output: "Boop! 2 _I'm sorry..._ 4 5 _I'm sorry..._ 7 8 _I'm sorry..._ Beep!"
 
 
  ## Setup/Installation Requirements
@@ -55,6 +55,8 @@ This website will accept a positive integer from a user and return the set of in
 ## Known Bugs
 
 Currently no handling of negative, empty, non-number, 0-value, or decimal inputs.
+
+Page layout is still problematic and falls apart at smaller screen sizes.
 
 ## Support and contact details
 

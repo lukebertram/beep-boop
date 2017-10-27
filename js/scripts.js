@@ -50,12 +50,23 @@ var divisibleBy = function(dividend, divisor){
   }
 }
 
+//returns true if the string is a positive non-zero int, false otherwise
+var isPositiveInteger = function(string){
+  var int = Math.floor(Number(string));
+  return String(int) === string && int > 0;
+}
+
 //front-end foolery
 $(document).ready(function(){
   $("form#userInput").submit(function(event){
     event.preventDefault();
-    var input = parseInt($("#numberEntry").val());
-    var output = halProcess(input);
-    $("div#result").text(output)
+    var input = $("#numberEntry").val();
+    if (isPositiveInteger(input)){
+      input = parseInt(input);
+      var output = halProcess(input);
+      $("div#result").text(output)
+    } else {
+      $("div#result").text("Please enter a positive integer greater than 0.")
+    }
   });
 });
