@@ -8,6 +8,24 @@
 
 _{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
 
+## Specifications
+
+* Accepts an integer and returns the set of integers from 0 (non-inclusive) up to and including the integer provided by the user.
+ * Input: "8"
+ * Output: "1 2 3 4 5 6 7 8"
+
+* Replaces all integers containing a "1" character in the return string with "Boop!"
+ * Input: "10"
+ * Output: "Boop! 2 3 4 5 6 7 8 9 Boop!"
+
+* Replaces all integers containing a "0" character in the return string with "Beep!"
+ * Input: "10"
+ * Output: "Boop! 2 3 4 5 6 7 8 9 Beep!"
+
+* Replaces all integers divisible by 3 in the return string with "I'm sorry" message.
+ * Input: "10"
+ * Output: "Boop! 2 I'm sorry 4 5 I'm sorry 7 8 I'm sorry Beep!"
+
 ## Setup/Installation Requirements
 
 * _This is a great place_
