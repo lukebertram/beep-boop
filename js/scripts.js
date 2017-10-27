@@ -4,14 +4,18 @@ var halProcess = function(inputNum){
   debugger
   for (var i = 1; i <= inputNum; i++) {
     var newElement;
+
+    if (containsZero(i){
+      //... set new element to "Beep!"
+      newElement = "Beep!"
     // if this integer contains a one...
-    if (containsOne(i)){
+    } else if (containsOne(i)){
       // ... set new element to "Boop!"
       newElement = "Boop!";
     } else {
       // otherwise set new element to the index integer
       newElement = i;
-    }
+    };
     outputArray.push(newElement);
   }
   return outputArray.join(", ");
@@ -25,6 +29,24 @@ var containsOne = function(integer){
     }
   }
   return false;
+};
+
+var containsZero = function(integer){
+  var testStr = integer.toString();
+  for (var i = 0; i < testStr.length; i++) {
+    if (testStr.charAt(i) === "0"){
+      return true
+    }
+  }
+  return false;
+};
+
+var divisibleBy = function(dividend, divisor){
+  if (dividend % divisor === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 //front-end foolery
