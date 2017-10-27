@@ -5,11 +5,14 @@ var halProcess = function(inputNum){
   for (var i = 1; i <= inputNum; i++) {
     var newElement;
 
-    if (containsZero(i){
+    if (divisibleBy(i,3)) {
+      //... set new element to "I'm sorry, Dave. I'm afraid I can't do that."
+      newElement = "I'm sorry, Dave. I'm afraid I can't do that."
+    } else if (containsZero(i)) {
       //... set new element to "Beep!"
       newElement = "Beep!"
     // if this integer contains a one...
-    } else if (containsOne(i)){
+    } else if (containsOne(i)) {
       // ... set new element to "Boop!"
       newElement = "Boop!";
     } else {
