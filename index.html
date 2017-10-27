@@ -10,17 +10,55 @@
   </head>
   <body>
     <div class="container">
-      <!-- Input Form -->
-      <form id="userInput" >
-        <label for="numberEntry">Please enter number:</label>
-        <input type="text" class="form-control" id="numberEntry">
+      <div class="row">
 
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-      <!-- Result Display -->
-      <div id="result">
+        <!-- Input Form column-->
+        <div class="input-column card text-white bg-dark col-sm-4" id="input-column">
+          <form id="userInput" >
+            <label for="numberEntry">Please enter number:</label>
+            <input type="text" class="form-control" id="numberEntry">
 
-      </div>
-    </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <!--end of Input Form column-->
+
+        <!-- Hal 9000 column -->
+        <div class="hal-column card text-white bg-dark col-sm-4">
+
+          <div class="hal-logo">
+            <div class="hal-logo-left">
+              <h2>HAL<h2>
+            </div>
+            <div class="hal-logo-right">
+              <h2>9000</h2>
+            </div>
+          </div>
+
+          <div class="hal-spacer">
+
+          </div>
+          
+          <div class="hal-eye">
+            <img src="images/hal.svg" alt="Hal 9000">
+          </div>
+          <div class="hal-speaker">
+
+          </div>
+        </div>
+        <!-- end of Hal 9000 column -->
+
+        <!-- Result Display -->
+        <div class="result-column card text-white bg-dark col-sm-4">
+
+          <div id="result">
+
+          </div>
+
+        </div>
+        <!--end of result column-->
+
+      </div><!--end of row-->
+    </div><!--end of container-->
   </body>
 </html>

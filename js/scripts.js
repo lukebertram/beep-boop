@@ -1,43 +1,41 @@
 //back-end business
+
+//accepts a number and returns a string of numbers and messages separated by commas
 var halProcess = function(inputNum){
   var outputArray = [];
-  debugger
   for (var i = 1; i <= inputNum; i++) {
     var newElement;
-
+    // if this integer is divisible by 3
     if (divisibleBy(i,3)) {
       //... set new element to "I'm sorry, Dave. I'm afraid I can't do that."
       newElement = "I'm sorry, Dave. I'm afraid I can't do that."
-    } else if (containsZero(i)) {
+
+    // if this integer contains a zero...
+    } else if (containsNumber(i, 0)) {
       //... set new element to "Beep!"
       newElement = "Beep!"
+
     // if this integer contains a one...
-    } else if (containsOne(i)) {
+    } else if (containsNumber(i, 1)) {
       // ... set new element to "Boop!"
       newElement = "Boop!";
+
+    // otherwise set new element to the index integer
     } else {
-      // otherwise set new element to the index integer
       newElement = i;
     };
+    // add the new element to the array
     outputArray.push(newElement);
   }
+  // convert the arra to a string of messages separated by commas
   return outputArray.join(", ");
 };
 
-var containsOne = function(integer){
-  var testStr = integer.toString();
+var containsNumber = function(element, compare){
+  var testStr = element.toString();
+  var number = compare.toString();
   for (var i = 0; i < testStr.length; i++) {
-    if (testStr.charAt(i) === "1"){
-      return true
-    }
-  }
-  return false;
-};
-
-var containsZero = function(integer){
-  var testStr = integer.toString();
-  for (var i = 0; i < testStr.length; i++) {
-    if (testStr.charAt(i) === "0"){
+    if (testStr.charAt(i) === number){
       return true
     }
   }

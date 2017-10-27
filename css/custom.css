@@ -1,0 +1,41 @@
+body {
+  background-color: #000;
+}
+.row {
+  height: 100vh;
+}
+ form{
+   position:relative;
+   top: 45%;
+ }
+
+.hal-column{
+  text-align: center;
+}
+.hal-logo {
+  padding: 0;
+  margin: 0;
+}
+.hal-logo > div {
+  width: 49%;
+  margin: 0;
+  padding: 0 .25em;
+  border: 1px solid #fff;
+  display: inline-block;
+}
+.hal-logo-left {
+  background-color: #5ac;
+}
+.hal-logo-left h2 {
+  display: block;
+  text-align: right;
+}
+.hal-logo-right h2 {
+  display: block;
+  text-align: left;
+}
+.hal-eye img {
+  display: block;
+  width: 80%;
+  margin: 1em auto;
+}
